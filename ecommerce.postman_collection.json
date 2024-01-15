@@ -1,0 +1,520 @@
+{
+	"info": {
+		"_postman_id": "a1349bbf-a1ec-4b6d-a07d-6385d486724c",
+		"name": "ecommerce",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30404176"
+	},
+	"item": [
+		{
+			"name": "http://localhost:3000/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"sara@email.com\",\r\n  \"password\": \"123\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "login",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"email\": \"sara@email.com\",\r\n  \"password\": \"123\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"login"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "24"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"18-6jxmqS5XIdYykVauY8CgKaLqsAM\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 15 Jan 2024 22:26:55 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"destinacion\": \"/admin\"\n}"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:3000/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"emri\": \"Schaumma\",\r\n    \"cmimi\": \"1.20\",\r\n    \"sasia\": 50,\r\n    \"pershkrimi\": \"Shampoo Schaumma\",\r\n    \"kategoria\": \"Shampoo\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/shtoproduktin",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"shtoproduktin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"emri\": \"Schaumma\",\r\n    \"cmimi\": \"1.20\",\r\n    \"sasia\": 50,\r\n    \"pershkrimi\": \"Shampoo Schaumma\",\r\n    \"kategoria\": \"Shampoo\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/shtoproduktin",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"shtoproduktin"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "shtoproduktin",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"emri\": \"Schaumma\",\r\n    \"cmimi\": \"1.20\",\r\n    \"sasia\": 50,\r\n    \"pershkrimi\": \"Shampoo Schaumma\",\r\n    \"kategoria\": \"Shampoo\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/shtoproduktin",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"shtoproduktin"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "40"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"28-XXeIEmL+H6CrxPbpDIb5Vs7CFSQ\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 15 Jan 2024 22:26:00 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Produkti u shtua me sukses\"\n}"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:3000/",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"emri\": \"Schaumma\",\r\n    \"cmimi\": \"1.20\",\r\n    \"sasia\": 50,\r\n    \"pershkrimi\": \"Shampoo Schaumma\",\r\n    \"kategoria\": \"Shampoo\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/lista",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"lista"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost:3000/lista",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"emri\": \"Schaumma\",\r\n    \"cmimi\": \"1.20\",\r\n    \"sasia\": 50,\r\n    \"pershkrimi\": \"Shampoo Schaumma\",\r\n    \"kategoria\": \"Shampoo\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/lista",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"lista"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "2999"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"bb7-+OknF8O3JNVbs7XdcSboSh8GgCE\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 15 Jan 2024 22:28:04 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"produkti_id\": 17,\n        \"emri\": \"Shamponi Dove\",\n        \"cmimi\": 8.5,\n        \"sasia\": 30,\n        \"pershkrimi\": \"Shamponi per kujdesin e flokeve\",\n        \"kategoria\": \"shampoo\",\n        \"foto_url\": \"https://m.media-amazon.com/images/I/41KYNMCTIPL._SX300_SY300_QL70_FMwebp_.jpg\"\n    },\n    {\n        \"produkti_id\": 20,\n        \"emri\": \"Laptop Dell\",\n        \"cmimi\": 799.99,\n        \"sasia\": 10,\n        \"pershkrimi\": \"Laptop me karakteristika te avancuara\",\n        \"kategoria\": \"house\",\n        \"foto_url\": \"https://m.media-amazon.com/images/I/81QjZasTdyL.__AC_SX300_SY300_QL70_FMwebp_.jpg\"\n    },\n    {\n        \"produkti_id\": 21,\n        \"emri\": \"Tigan elektrik\",\n        \"cmimi\": 29.99,\n        \"sasia\": 25,\n        \"pershkrimi\": \"Tigan elektrik per gatim te shpejte\",\n        \"kategoria\": \"kitchen\",\n        \"foto_url\": \"https://m.media-amazon.com/images/I/71MKeapxgnL.__AC_SY300_SX300_QL70_FMwebp_.jpg\"\n    },\n    {\n        \"produkti_id\": 22,\n        \"emri\": \"Pjata inox\",\n        \"cmimi\": 5.99,\n        \"sasia\": 40,\n        \"pershkrimi\": \"Pjata inox për servirje të ushqimit\",\n        \"kategoria\": \"kitchen\",\n        \"foto_url\": \"https://m.media-amazon.com/images/I/51q3CFdfSKL.__AC_SX300_SY300_QL70_FMwebp_.jpg\"\n    },\n    {\n        \"produkti_id\": 25,\n        \"emri\": \"Shporet elektrik\",\n        \"cmimi\": 39.99,\n        \"sasia\": 15,\n        \"pershkrimi\": \"Shporet elektrik për ngrohje të shpejtë\",\n        \"kategoria\": \"house\",\n        \"foto_url\": \"https://m.media-amazon.com/images/I/51mCq84+dBL._AC_SY300_SX300_.jpg\"\n    },\n    {\n        \"produkti_id\": 27,\n        \"emri\": \"A Heart of Fire: Special Edition (A Heart of Fire - The Nightling Trilogy)\",\n        \"cmimi\": 16.99,\n        \"sasia\": 30,\n        \"pershkrimi\": \"STEP INTO THE ENCHANTED REALM WITH A PRE-ORDER EDITION OF \\\"A HEART OF FIRE.\\\" IMMERSE YOURSELF IN GEOFF VALE'S SPELLBINDING DEBUT, THE FIRST IN AN EXTRAORDINARY SERIES. THIS SPECIAL EDITION ENCHANTS WITH LAVISH EXCLUSIVES SUCH AS A \\\"COMPENDIUM OF LORE\\\" THAT CONTINUES THROUGHOUT THE TRILOGY AND A GRIMOIRE-INSPIRED COVER THAT WILL PERFECTLY COMPLEMENT YOUR FANTASY COLLECTION. WELCOME TO THE SEASON OF THE WITCH.\",\n        \"kategoria\": \"book\",\n        \"foto_url\": \"https://m.media-amazon.com/images/I/71FWnqhVa7L._AC_UY218_.jpg\"\n    },\n    {\n        \"produkti_id\": 28,\n        \"emri\": \"Fourth Wing: Empyrean, Book 1\",\n        \"cmimi\": 16.82,\n        \"sasia\": 20,\n        \"pershkrimi\": \"Fourth Wing will have your heart pounding from beginning to end... A fantasy like you've never read before.―#1 New York Times bestselling author Jennifer L. Armentrout Enter the brutal and elite world of a war college for dragon riders from New York Times bestselling author Rebecca Yarros\",\n        \"kategoria\": \"book\",\n        \"foto_url\": \"C:\\\\Users\\\\LENOVO\\\\Desktop\\\\Projekti-3\\\\FRONTEND\\\\eccomerce\\\\src\\\\assets\\\\foto_url\\\\61D7uTS7-TL.jpg\"\n    },\n    {\n        \"produkti_id\": 29,\n        \"emri\": \"Fourth Wing: Empyrean, Book 1\",\n        \"cmimi\": 16.82,\n        \"sasia\": 20,\n        \"pershkrimi\": \"Fourth Wing will have your heart pounding from beginning to end... A fantasy like you've never read before.―#1 New York Times bestselling author Jennifer L. Armentrout Enter the brutal and elite world of a war college for dragon riders from New York Times bestselling author Rebecca Yarros\",\n        \"kategoria\": \"book\",\n        \"foto_url\": null\n    },\n    {\n        \"produkti_id\": 30,\n        \"emri\": \"Test\",\n        \"cmimi\": 3,\n        \"sasia\": 9,\n        \"pershkrimi\": \"Test\",\n        \"kategoria\": \"house\",\n        \"foto_url\": null\n    },\n    {\n        \"produkti_id\": 31,\n        \"emri\": \"Schaumma\",\n        \"cmimi\": 1.2,\n        \"sasia\": 50,\n        \"pershkrimi\": \"Shampoo Schaumma\",\n        \"kategoria\": \"Shampoo\",\n        \"foto_url\": null\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:3000/",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/delete/25",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"delete",
+						"25"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost:3000/",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/delete/29",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"delete",
+								"29"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "39"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"27-6xtEA6+d2Pq3DOvLDiDUq5OsRq0\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 15 Jan 2024 22:28:46 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Produkti u fshi me sukses\"\n}"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:3000/",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"emri\": \"Peme Molle\",\r\n  \"cmimi\": 0.00,\r\n  \"sasia\": 0,\r\n  \"pershkrimi\": \"\",\r\n  \"kategoria\": \"garden\"\r\n}\r\n\r\n\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/update/23",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"update",
+						"23"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost:3000/update",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"emri\": \"Schaumma\",\r\n    \"cmimi\": \"1.30\",\r\n    \"sasia\": 70,\r\n    \"pershkrimi\": \"Shampoo Schaumma\",\r\n    \"kategoria\": \"Shampoo\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/update/31",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"update",
+								"31"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "33"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"21-Uh1HhkfhFuGq7AMCXqK3/6Ghkcg\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 15 Jan 2024 22:32:17 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Produkti u ndryshua\"\n}"
+				}
+			]
+		}
+	]
+}
