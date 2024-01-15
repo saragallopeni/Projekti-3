@@ -1,0 +1,23 @@
+<router-outlet></router-outlet>
+<div class="nav">
+    <a routerLink="/admin">
+    <h1>E commerce
+      <i class="fa-solid fa-cart-shopping"></i>
+    </h1></a>
+    <div class="kerkimi">
+ <a routerLink="/admin"><i class="fa-solid fa-right-from-bracket"></i></a>
+    </div>
+
+  </div>
+  <div class="produktet">
+<div *ngFor="let produkti of listaProdukti" class="product">
+  <div><strong>Id:</strong> {{ produkti.produkti_id }}</div>
+    <div><strong>Emri:</strong> {{ produkti.emri }}</div>
+    <div><strong>Cmimi:</strong> {{ produkti.cmimi }}</div>
+    <div><strong>Sasia:</strong> {{ produkti.sasia }}</div>
+    <div><strong>Pershkrimi:</strong> {{ produkti.pershkrimi }}</div>
+    <div><strong>Kategoria:</strong> {{ produkti.kategoria }}</div>
+    <div><strong>Foto url:</strong> {{ produkti.foto_url }}</div>
+
+  </div>
+</div>

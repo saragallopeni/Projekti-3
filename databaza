@@ -1,0 +1,30 @@
+use ecommerce;
+
+CREATE TABLE kategoria (
+  kategoria VARCHAR(255) PRIMARY KEY
+);
+
+CREATE TABLE produkte (
+  produkti_id INT AUTO_INCREMENT PRIMARY KEY,
+  emri VARCHAR(255) NOT NULL,
+  cmimi DECIMAL(10,2) NOT NULL,
+  sasia INT NOT NULL,
+  pershkrimi TEXT,
+  kategoria VARCHAR(255),
+  FOREIGN KEY (kategoria) REFERENCES kategoria(kategoria)
+);
+create table porosia(
+  porosia_id INT AUTO_INCREMENT PRIMARY KEY,
+  klienti_id INT,
+  data_e_porosis DATE NOT NULL,
+  sasia INT NOT NULL,
+  FOREIGN KEY (klienti_id) REFERENCES perdoruesi(id)
+);
+CREATE TABLE detajet_e_porosise (
+  detajet_e_porosis_id INT AUTO_INCREMENT PRIMARY KEY,
+  porosia_id INT,
+  produkt_id INT,
+  sasia INT NOT NULL,
+  FOREIGN KEY (porosia_id) REFERENCES porosia(porosia_id),
+  FOREIGN KEY (produkt_id) REFERENCES produkte(produkti_id)
+);

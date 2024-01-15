@@ -1,0 +1,95 @@
+.body{
+    background-color: #ebebeb;
+    background-image: url("/assets/product-makeup/snow-transparent-transparentsnow.gif");
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'MontSerrat';
+    width: 400px;
+    height: 400px;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    
+
+    
+}
+
+.b{
+    width: 350px;
+    height: 350px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    padding-left: 30px;
+    background-color: white;
+    border-radius: 30px;
+    box-shadow: 2px 2px 8px rgb(7, 7, 7, 1);
+
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.input{
+    margin-top: 25px;
+  
+}
+img{
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+}
+.user{
+    width: 260px;
+    height: 15px;
+    margin-bottom: 5px;
+    border-radius: 20px 20px 0px 0px;
+    border: none;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    font-size: 18px;
+
+
+}
+.pass{
+    box-sizing: border-box;
+    width: 300px;
+    height: 48px;
+    margin-bottom: 5px;
+    border: none;
+    padding: 20px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-size: 18px;
+
+    
+}
+button{
+    width: 300px;
+    height: 50px;
+    border-radius: 0px 0px 20px 20px;
+    border: none;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-size: 18px;
+    color: white;
+    background-image: linear-gradient(to right, #DA22FF 0%, #9733EE  51%, #DA22FF  100%);
+    font-weight: bold;
+}
+button:hover{
+    cursor: pointer;
+    background-image: linear-gradient(to right, #4776E6 0%, #8E54E9  51%, #4776E6  100%);    transition: 0.5s;
+    transition: 0.5s;
+    border-radius: 20px;
+}

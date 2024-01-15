@@ -1,0 +1,65 @@
+
+.s{
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-bottom: 50px;
+    margin-top: 80px;
+    background-color: white;
+    padding: 30px;
+
+}
+p{
+    font-size: 20px;
+}
+i{
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+
+}
+.sherbimi{
+    font-family: 'MontSerrat';
+    color: rgb(114, 112, 112);
+}
+.kontakt{
+    font-family: 'MontSerrat';
+    color: rgb(114, 112, 112);
+}
+.kontaktet ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+
+}
+.kontaktet ul li{
+    padding: 20px;
+    font-size: 35px;
+
+}
+.kontaktet ul li:hover{
+    cursor: pointer;
+}
+.insta:hover{
+   color: #E0115F;
+   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+
+}
+.face:hover{
+    color: #0066b2;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+}
+.tele:hover{
+  color: #0CAFFF;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+}
+.tw:hover{
+    color: #00BFFF;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+}
+.em:hover{
+    color: #C60C30;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+}

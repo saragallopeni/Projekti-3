@@ -1,0 +1,68 @@
+.quote{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+
+}
+.a{
+    margin: 50px;
+    width: 1000px;
+    height: 610px;
+    box-shadow: 2px 2px 8px rgb(7, 7, 7, 1);
+    border-radius: 50px;
+    box-sizing: border-box;
+
+
+}
+
+.foto{
+    width: 100%;
+    height: 450px;
+    background-image: url("/assets/rrethnesh/pexels-tim-douglas-6567607.jpg");
+    background-size: cover;
+    box-sizing: border-box;
+    border-radius: 0px 0px 50px 50px;
+    margin-top: 50px;
+}
+
+.text{
+    margin-bottom: 10px;
+    width: 100%;
+    height: 100px;
+    color: rgb(114, 112, 112);
+    padding: 10px;
+    margin: 10px;
+    box-sizing: border-box;
+    text-align: center;
+}
+.text h1{
+    font-family: 'MontSerrat';
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+}
+
+.text h1 i{
+    margin-left: 10px;
+    color: #FEBE10;
+    text-shadow: none;
+    
+}
+.rreth-nesh{
+    font-family: 'MontSerrat';
+    margin-left: 180px;
+    margin-right: 180px;
+    padding: 5px;
+    margin-bottom: 50px;
+}
+h2{
+    color: rgb(114, 112, 112);
+}
+p{
+
+    font-size: 18px;
+}
+ul{
+    list-style: none;
+    font-size: 18px;
+}

@@ -1,0 +1,72 @@
+.a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'MontSerrat';
+
+}
+
+.b{
+    width: 380px;
+    height: 600px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    border-radius: 20px;
+
+}
+.input{
+    margin: 20px;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.user{
+    font-size: 15px;
+    width: 20px;
+    height: 20px;
+    box-shadow: none;
+}
+img{
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+}
+input{
+    box-sizing: border-box;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    border: none;
+    width: 350px;
+    height: 50px;
+    margin-bottom: 5px;
+    padding: 10px;
+    font-size: 15px;
+
+}
+.name{
+    border-radius: 20px 20px 0px 0px;
+
+}
+
+button{
+   
+    width: 350px;
+    height: 50px;
+    border-radius: 0px 0px 20px 20px;
+    border: none;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-size: 18px;
+    color: white;
+    background-image: linear-gradient(to right, #DA22FF 0%, #9733EE  51%, #DA22FF  100%);
+    font-weight: bold;
+    margin-top: 20px;
+}
+button:hover{
+    cursor: pointer;
+    background-image: linear-gradient(to right, #4776E6 0%, #8E54E9  51%, #4776E6  100%);    transition: 0.5s;
+    border-radius: 20px;
+}

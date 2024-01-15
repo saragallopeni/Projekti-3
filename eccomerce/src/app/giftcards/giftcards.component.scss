@@ -1,0 +1,107 @@
+.body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.content{
+    display: grid;
+    grid-template-rows: 200px 350px;
+    grid-template-columns: 100%;
+    margin-top: 8%;
+    left: 0;
+    right: 0;
+
+
+
+}
+.zbukurimet{
+    display: grid;
+    grid-template-columns: 250px 400px  320px;
+    grid-template-rows: 200px 350px;
+    justify-content: center;
+
+
+
+}
+.zbukurimet .aa{
+    background-image: url("/assets/giftcards/pexels-andrea-piacquadio-853151.jpg");
+    background-size: cover;
+    border: none;   
+    border-radius: 40px 0px 0px 0px; 
+}
+
+.zbukurimet .ab{
+    background-image: url("/assets/giftcards/pexels-max-fischer-5872359.jpg");
+    background-size: cover;
+    border: none;   
+    border-radius: 0px 40px 0px 0px; 
+
+}
+.a{
+    background-image: url("/assets/giftcards/pexels-andrea-piacquadio-1004877.jpg");
+    background-size: cover;
+    border: none;   
+}
+.text{
+    height: 350px;
+    width: 100%;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 1000px;
+    grid-template-rows: 100px 180px;
+    justify-content: center;
+    align-items: center;
+    font-family: 'MontSerrat';
+
+  
+}
+.header{
+    text-align: center;
+    display: grid;
+    grid-template-columns: 100px auto 150px;
+    grid-template-rows: 100px;
+
+
+}
+
+.header img{
+    width: 100px;
+    height: 100px;
+}
+.header .fa{
+    background-image: url("/assets/giftcards/depositphotos_8139084-stock-photo-red-bow.jpg");
+    background-size: cover;
+
+    
+
+}
+.header .fb{
+    background-image: url("/assets/giftcards/depositphotos_57155617-stock-photo-composite-image-of-flying-christmas.png");
+    background-size: cover;
+    
+}
+.header .fb:hover{
+    animation: animacioni 3s ease-in-out infinite;
+    cursor: pointer;
+
+}
+.header h1{
+    padding: 2px;
+    font-size: 25px;
+}
+.header h1 i{
+    color: #FEBE10;
+}
+.paragrafi{
+    text-align: center;
+    padding: 20px;
+    border-radius: 40px;
+
+
+}
+@keyframes animacioni {
+    0%, 100% { transform: rotate(0) translateX(0); } 
+    25% { transform: rotate(5deg) translateX(5px); } 
+    75% { transform: rotate(-5deg) translateX(-5px); }
+}

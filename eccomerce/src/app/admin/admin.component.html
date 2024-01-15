@@ -1,0 +1,66 @@
+<router-outlet></router-outlet>
+<div class="nav">
+    <a routerLink="/admin">
+    <h1>E commerce
+      <i class="fa-solid fa-cart-shopping"></i>
+    </h1></a>
+    <div class="kerkimi">
+    <ul>
+      <li><a routerLink="/"><i class="fa-solid fa-right-from-bracket"></i></a></li>
+    </ul>
+    </div>
+
+  </div>
+
+ <div class="butonat-a">
+
+  <div class="title">
+  <h1>WELCOME ADMIN  <i class="fa-brands fa-black-tie"></i></h1>
+  </div>
+
+    <div class="insertet">
+    <h3>Shto Produktin :</h3>
+      <input type="text" placeholder="Emri i produktit" [(ngModel)]="emri" />
+      <input type="number" placeholder="Cmimi" [(ngModel)]="cmimi" />
+      <input type="number" placeholder="Sasia" [(ngModel)]="sasia" />
+      <textarea placeholder="Pershkrimi i produktit ..." rows="4" cols="50" [(ngModel)]="pershkrimi"></textarea>
+      <select [(ngModel)]="kategoriaSelektuar" name="kategori">
+        <option *ngFor="let kategoria of kategorit" [value]="kategoria.kategoria">{{ kategoria.kategoria }}</option>
+      </select>
+      <button (click)="shtoProduktin()">Shto produktin</button>
+    </div>
+    
+    <div class="fshijproduktin">
+      <h3>Fshi produktin :</h3>
+      <input type="number" placeholder="Id" [(ngModel)]="produktiId">
+      <button (click)="fshiProduktin()">Fshi produktin</button>
+    </div>
+
+    <div class="listaprodukteve">
+      <h3>Merr listën e produkteve :</h3>
+      <button routerLink="/lista">Lista e produkteve</button>
+    </div>
+
+    <div class="update">
+      <h3>Përditëso produktin :</h3>
+    
+      <div class="r">
+        <input type="text" [(ngModel)]="id" placeholder="Id">
+        <input type="text" [(ngModel)]="emri" placeholder="Emri i produktit">
+        <input type="number" [(ngModel)]="cmimi" placeholder="Cmimi">
+        <input type="number" [(ngModel)]="sasia" placeholder="Sasia">
+        <textarea [(ngModel)]="pershkrimi" placeholder="Pershkrimi i produktit ..." rows="4" cols="50"></textarea>
+        <select [(ngModel)]="kategoriaSelektuar" name="kategori">
+          <option *ngFor="let kategoria of kategorit" [value]="kategoria.kategoria">{{ kategoria.kategoria }}</option>
+        </select>
+      </div>
+    
+      <div class="e">
+        <button (click)="update()">Perditso produktin</button>
+      </div>
+    </div>
+    
+ </div>
+
+
+ 
