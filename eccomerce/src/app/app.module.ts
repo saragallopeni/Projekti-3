@@ -54,7 +54,8 @@ import { RrethNeshKlientiComponent } from './rreth-nesh-klienti/rreth-nesh-klien
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    AppRoutingModule,
   ],
   providers: [
     provideClientHydration()

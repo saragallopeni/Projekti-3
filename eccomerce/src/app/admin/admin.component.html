@@ -18,17 +18,18 @@
   <h1>WELCOME ADMIN  <i class="fa-brands fa-black-tie"></i></h1>
   </div>
 
-    <div class="insertet">
-    <h3>Shto Produktin :</h3>
-      <input type="text" placeholder="Emri i produktit" [(ngModel)]="emri" />
-      <input type="number" placeholder="Cmimi" [(ngModel)]="cmimi" />
-      <input type="number" placeholder="Sasia" [(ngModel)]="sasia" />
-      <textarea placeholder="Pershkrimi i produktit ..." rows="4" cols="50" [(ngModel)]="pershkrimi"></textarea>
-      <select [(ngModel)]="kategoriaSelektuar" name="kategori">
-        <option *ngFor="let kategoria of kategorit" [value]="kategoria.kategoria">{{ kategoria.kategoria }}</option>
-      </select>
-      <button (click)="shtoProduktin()">Shto produktin</button>
-    </div>
+  <div class="insertet">
+    <h3>Shto Produktin:</h3>
+    <input type="text" placeholder="Emri i produktit" [(ngModel)]="emri">
+    <input type="number" placeholder="Cmimi" [(ngModel)]="cmimi">
+    <input type="number" placeholder="Sasia" [(ngModel)]="sasia">
+    <textarea placeholder="Pershkrimi i produktit..." rows="4" cols="50" [(ngModel)]="pershkrimi"></textarea>
+    <select [(ngModel)]="kategoriaSelektuar" name="kategori">
+      <option *ngFor="let kategoria of kategorit" [value]="kategoria.kategoria">{{ kategoria.kategoria }}</option>
+    </select>
+    <input type="file" (change)="onFileSelected($event)">
+    <button (click)="shtoProduktin()">Shto produktin</button>
+  </div>
     
     <div class="fshijproduktin">
       <h3>Fshi produktin :</h3>

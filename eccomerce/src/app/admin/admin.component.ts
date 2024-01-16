@@ -12,34 +12,35 @@ export class AdminComponent implements OnInit{
   sasia: number = 0;
   kategoriaSelektuar: string = '';
   pershkrimi: string = '';
- 
+  selectedFile: File | null = null;
+
 
 
   
     constructor(private produktiService: ProduktiService) {}
 
   
+    onFileSelected(event: any) {
+      this.selectedFile = event.target.files[0];
+    }
+  
     shtoProduktin() {
-      const produkti = {
-        emri: this.emri,
-        cmimi: this.cmimi,
-        sasia: this.sasia,
-        pershkrimi: this.pershkrimi,
-        kategoria: this.kategoriaSelektuar
-      
-      };
-      console.log(produkti.kategoria)
-      if (!produkti.emri || !produkti.cmimi || !produkti.sasia || !produkti.pershkrimi || !produkti.kategoria ) {
-        console.log(produkti)
-        alert('Të lutem mbushi të gjitha fushat e produktit');
-        return; 
+      const formData = new FormData();
+      formData.append('emri', this.emri);
+      formData.append('cmimi', this.cmimi.toString());
+      formData.append('sasia', this.sasia.toString());
+      formData.append('pershkrimi', this.pershkrimi);
+      formData.append('kategoria', this.kategoriaSelektuar);
+      if (this.selectedFile) {
+        formData.append('photo', this.selectedFile, this.selectedFile.name);
       }
-      
-      this.produktiService.shtoProduktin(produkti).subscribe(
+  
+      this.produktiService.shtoProduktin(formData).subscribe(
         (response) => {
-          console.log(response);
-          alert('Produkti është shtuar me sukses!');
-
+          console.log('Pergjigjja:', response);
+          const fotoUrl = response.foto_url;
+          console.log('Foto URL:', fotoUrl);
+          alert('Produkti u shtua me sukses!');
         } );  
     }
 

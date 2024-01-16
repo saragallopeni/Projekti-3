@@ -1,6 +1,9 @@
 const express = require('express');
 const router = express.Router();
 const database = require('./databaza');
+require('dotenv').config();
+const jwt = require('jsonwebtoken');
+
 
 router.use(express.json());
 
@@ -24,9 +27,11 @@ router.post('/', (req, res) => {
       }
 
       const user = rows[0];
-      const destinacion = (user.roli === 'admin') ? '/admin' : '/klienti';
-      res.json({ destinacion });
+      const { id, emri, roli } = user;
 
+      const token = jwt.sign({ id, emri, roli }, process.env.JWT_SECRET, { expiresIn: '1h' });
+
+      res.json({ token });
     });
   } catch (err) {
     console.error('Error:', err);
